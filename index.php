@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="Hugo 0.115.4">
-    <title>Blog Template · Bootstrap v5.3</title>
+    <title>Geomuseo Web</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
 
