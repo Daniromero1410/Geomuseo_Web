@@ -1,0 +1,697 @@
+
+<!doctype html>
+<html lang="es" data-bs-theme="auto">
+  <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+<!--CONTENIDO META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Daniel ROMERO">
+    <meta name="generator" content="Hugo 0.115.4">
+    <title>Geomuseo Web</title>
+
+<!--FIN CONTENIDO META -->
+
+
+<!--Links de referencia para diseño -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<!--FIN LINKS DE REFERENCIA -->
+
+
+
+<!-- FAVICONS -->
+<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+<!--FIN DE FAVICONS-->
+
+
+
+<!--ESTILIZACION EN CSS3, NO OLVIDAR PASAR AL DOCUMENTO EXTERNO-->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+<!--FIN CSS3 -->
+    
+  </head>
+
+  <!--INICIO DEL BODY-->
+  <body data-bs-theme="dark">
+    
+<!--ENCABEZADO Y NAVDROP-->
+    
+<header data-bs-theme="dark">
+  <nav class="navbar navbar-dark bg-dark fixed-top" style="height: 2.5cm;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html"><img src="imagenes\Iconos\Logo Oscuro.png" alt="Logo Oscuro" style="height: 2cm;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <img src="imagenes\Iconos\Logo Oscuro.png" alt="">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ROCAS IGNEAS 
+              </a> 
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="rocas_igneas_intrusivas.html">INTRUSIVAS</a></li>
+                <li><a class="dropdown-item" href="rocas_igneas_extrusivas.html">EXTRUSIVAS</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#"></a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ROCAS SEDIMENTARIAS 
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="rocas_sedimentarias.html">DETRITICAS</a></li>
+                <li><a class="dropdown-item" href="rocas_quimicas.html">QUIMICAS</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#"></a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ROCAS METAMORFICAS 
+                </a> 
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="rocas_metamorficas_foliadas.html">FOLIADAS</a></li>
+                  <li><a class="dropdown-item" href="rocas_metamorficas_no_foliadas.html">NO FOLIADAS</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      MINERALES
+                    </a> 
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="minerales_nativos.html">GRUPO I</a></li>
+                    <li><a class="dropdown-item" href="minerales_sulfuros_y_sulfasales.html">GRUPO II</a></li>
+                    <li><a class="dropdown-item" href="minerales_haluros.html">GRUPO III</a></li>
+                    <li><a class="dropdown-item" href="minerales_oxidos_e_hidroxidos.html">GRUPO IV</a></li>
+                    <li><a class="dropdown-item" href="minerales_grupo_V.html">GRUPO V</a></li>
+                    <li><a class="dropdown-item" href="grupo_VI.html">GRUPO VI</a></li>
+                    <li><a class="dropdown-item" href="grupo VII.html">GRUPO VII</a></li>
+                    <li><a class="dropdown-item" href="grupo_VIII.html">GRUPO VIII</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                  </ul>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PETROGRAFICAS
+                    </a> 
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="petro_ignea.html">IGNEA</a></li>
+                    <li><a class="dropdown-item" href="petro_metamorfica.html">METAMORFICA</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                  </ul>
+          </ul>
+          <li class="nav-item ">
+            <a class="nav-link Toggle" href="fosiles.html" role="button" data-bs-toggle="nav-item" aria-expanded="false">
+              FOSILES
+            </a> 
+            
+      </ul>
+         
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+</header>
+<!--FIN ENCABEZADO Y NAVDROP-->
+<main>
+<br>
+<br>
+<br>
+
+  <section class="album py-5 text-center container" >
+    <div >
+      <div class="container" >
+        <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\GRUPO VIII. SILICATOS.gif"style="width: 60%;" alt="Imagen"></img>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-body-tertiary">
+    <div  class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" >
+        <!--Imagen 1 -->
+        <div class="col">
+            
+            <div class="card" style="width: auto;">
+                <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-001-A.gif"class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">MIN-SIL-001</h5>
+                    <p class="card-text"></p>
+                    <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Imagen</a>
+                  </div>
+                </div>
+                <!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        
+                        
+                          <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-001-B.gif" alt="Imagen" style="width: 150%;" >
+
+                      </div>
+                    </div>
+                  </div>
+       <!--FIN IMAGEN 1 -->
+
+        <!--INICIO IMAGEN 2 -->
+
+        </div>
+        <div class="col">
+          <div class="card" style="width: auto;">
+            <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-002-A.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">MIN-SIL-002</h5>
+              <p class="card-text"></p>
+              <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">Ver Imagen</a>
+            </div>
+          </div>
+  <!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        
+          <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-002-B.gif" alt="Imagen" style="width: 150%;" >
+
+      </div>
+    </div>
+  </div>
+  </div>
+    <!--FIN IMAGEN 2-->
+    
+<!--INICIO IMAGEN 3 -->
+<div class="col">
+    <div class="card" style="width: auto;">
+      <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-005-A.gif"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN-SIL-005</h5>
+        <p class="card-text"></p>
+        <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#003">Ver Imagen</a>
+      </div>
+    </div>
+<!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+<div class="modal fade" id="003" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  
+  
+    <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-005-B.gif"alt="Imagen" style="width: 150%;" >
+
+</div>
+</div>
+</div>
+</div>
+<!--FIN CLASE MODAL-->
+
+<!--FIN IMAGEN 3-->
+
+       <!--INICIO IMAGEN 4 -->
+<div class="col">
+    <div class="card" style="width: auto;">
+      <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-007-A.gif"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN-SIL-007</h5>
+        <p class="card-text"></p>
+        <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#004">Ver Imagen</a>
+      </div>
+    </div>
+<!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+<div class="modal fade" id="004" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  
+  
+    <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-007-B.gif"alt="Imagen" style="width: 150%;" >
+
+</div>
+</div>
+</div>
+</div>
+<!--FIN CLASE MODAL-->
+<!--FIN IMAGEN 4-->
+
+
+      <!--INICIO IMAGEN 5 -->
+     
+      <div class="col">
+        <div class="card" style="width: auto;">
+          <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-009-A.gif"class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MIN-SIL-009</h5>
+            <p class="card-text"></p>
+            <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#005">Ver Imagen</a>
+          </div>
+        </div>
+    <!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+    <div class="modal fade" id="005" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+      
+      
+        <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-009-B.gif"alt="Imagen" style="width: 150%;" >
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--FIN CLASE MODAL-->
+    <!--FIN IMAGEN 5-->
+    
+<!--INICIO IMAGEN 6 -->
+     
+<div class="col">
+    <div class="card" style="width: auto;">
+      <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-010-A.gif"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN-SIL-010</h5>
+        <p class="card-text"></p>
+        <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#006">Ver Imagen</a>
+      </div>
+    </div>
+<!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+<div class="modal fade" id="006" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  
+  
+    <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-010-B.gif"alt="Imagen" style="width: 150%;" >
+
+</div>
+</div>
+</div>
+</div>
+<!--FIN CLASE MODAL-->
+<!--FIN IMAGEN 6-->
+
+<!--INICIO IMAGEN 7 -->
+     
+<div class="col">
+    <div class="card" style="width: auto;">
+      <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-012-A.gif"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN-SIL-012</h5>
+        <p class="card-text"></p>
+        <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#007">Ver Imagen</a>
+      </div>
+    </div>
+<!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+<div class="modal fade" id="007" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  
+  
+    <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-012-B.gif"alt="Imagen" style="width: 150%;" >
+
+</div>
+</div>
+</div>
+</div>
+<!--FIN CLASE MODAL-->
+<!--FIN IMAGEN 7-->
+
+
+<!--INICIO IMAGEN 8 -->
+     
+<div class="col">
+    <div class="card" style="width: auto;">
+      <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-013-A.gif"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN-SIL-013</h5>
+        <p class="card-text"></p>
+        <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#008">Ver Imagen</a>
+      </div>
+    </div>
+<!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+<div class="modal fade" id="008" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  
+  
+    <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-013-B.gif"alt="Imagen" style="width: 150%;" >
+
+</div>
+</div>
+</div>
+</div>
+<!--FIN CLASE MODAL-->
+<!--FIN IMAGEN 8-->
+
+
+<!--INICIO IMAGEN 9 -->
+     
+<div class="col">
+    <div class="card" style="width: auto;">
+      <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-015-A.gif"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN-SIL-015</h5>
+        <p class="card-text"></p>
+        <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#009">Ver Imagen</a>
+      </div>
+    </div>
+<!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+<div class="modal fade" id="009" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  
+  
+    <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-015-B.gif"alt="Imagen" style="width: 150%;" >
+
+</div>
+</div>
+</div>
+</div>
+<!--FIN CLASE MODAL-->
+<!--FIN IMAGEN 9-->
+
+
+
+<!--INICIO IMAGEN 10 -->
+     
+<div class="col">
+    <div class="card" style="width: auto;">
+      <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-016-A.gif"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN-SIL-016</h5>
+        <p class="card-text"></p>
+        <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#010">Ver Imagen</a>
+      </div>
+    </div>
+<!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+<div class="modal fade" id="010" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  
+  
+    <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-016-B.gif"alt="Imagen" style="width: 150%;" >
+
+</div>
+</div>
+</div>
+</div>
+<!--FIN CLASE MODAL-->
+<!--FIN IMAGEN 10-->
+
+
+<!--INICIO IMAGEN 11 -->
+     
+<div class="col">
+    <div class="card" style="width: auto;">
+      <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-017-A.gif"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN-SIL-017</h5>
+        <p class="card-text"></p>
+        <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#011">Ver Imagen</a>
+      </div>
+    </div>
+<!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+<div class="modal fade" id="011" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  
+  
+    <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-017-B.gif"alt="Imagen" style="width: 150%;" >
+
+</div>
+</div>
+</div>
+</div>
+<!--FIN CLASE MODAL-->
+<!--FIN IMAGEN 11-->
+
+<!--INICIO IMAGEN 12 -->
+     
+<div class="col">
+    <div class="card" style="width: auto;">
+      <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-020-A.gif"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN-SIL-020</h5>
+        <p class="card-text"></p>
+        <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#012">Ver Imagen</a>
+      </div>
+    </div>
+<!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+<div class="modal fade" id="012" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  
+  
+    <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-020-B.gif"alt="Imagen" style="width: 150%;" >
+
+</div>
+</div>
+</div>
+</div>
+<!--FIN CLASE MODAL-->
+<!--FIN IMAGEN 12-->
+
+
+
+<!--INICIO IMAGEN 13 -->
+     
+<div class="col">
+    <div class="card" style="width: auto;">
+      <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-022-A.gif"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN-SIL-022</h5>
+        <p class="card-text"></p>
+        <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#013">Ver Imagen</a>
+      </div>
+    </div>
+<!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+<div class="modal fade" id="013" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  
+  
+    <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-022-B.gif"alt="Imagen" style="width: 150%;" >
+
+</div>
+</div>
+</div>
+</div>
+<!--FIN CLASE MODAL-->
+<!--FIN IMAGEN 13-->
+
+
+
+
+<!--INICIO IMAGEN 14 -->
+     
+<div class="col">
+    <div class="card" style="width: auto;">
+      <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-023-A.gif"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN-SIL-023</h5>
+        <p class="card-text"></p>
+        <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#014">Ver Imagen</a>
+      </div>
+    </div>
+<!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+<div class="modal fade" id="014" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  
+  
+    <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-023-B.gif"alt="Imagen" style="width: 150%;" >
+
+</div>
+</div>
+</div>
+</div>
+<!--FIN CLASE MODAL-->
+<!--FIN IMAGEN 14-->
+
+
+<!--INICIO IMAGEN 15 -->
+     
+<div class="col">
+    <div class="card" style="width: auto;">
+      <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-024-A.gif"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN-SIL-024</h5>
+        <p class="card-text"></p>
+        <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#015">Ver Imagen</a>
+      </div>
+    </div>
+<!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+<div class="modal fade" id="015" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  
+  
+    <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-024-B.gif"alt="Imagen" style="width: 150%;" >
+
+</div>
+</div>
+</div>
+</div>
+<!--FIN CLASE MODAL-->
+<!--FIN IMAGEN 15-->
+
+<!--INICIO IMAGEN 16 -->
+     
+<div class="col">
+    <div class="card" style="width: auto;">
+      <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-025-A.gif"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MIN-SIL-025</h5>
+        <p class="card-text"></p>
+        <a  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#016">Ver Imagen</a>
+      </div>
+    </div>
+<!--CLASE MODAL DE LA IMAGEN PARA LA VENTANA EMERGENTE-->
+<div class="modal fade" id="016" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  
+  
+    <img src="imagenes\minerales\MINERALES\GRUPO VIII. SILICATOS\MIN-SIL-025-B.gif"alt="Imagen" style="width: 150%;" >
+
+</div>
+</div>
+</div>
+</div>
+<!--FIN CLASE MODAL-->
+<!--FIN IMAGEN 16-->
+
+
+
+
+
+
+
+
+
+
+
+    
+
+     
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-body-secondary py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Sube</a>
+      </p>
+      <p class="mb-1">Album Creado Por Angelica Salazar y Daniela </p>
+      <p class="mb-0">Quieres ver mas? <a href="/">Visita el inicio</a>.</p>
+    </div>
+  </footer>
+  <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+      </body>
+  </html>
